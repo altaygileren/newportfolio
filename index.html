@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+
+
+
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA"
+    crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+
+  <title>Eren Altaygil- Web Developer</title>
+</head>
+
+<body>
+  <!-- <div class="sticky-top navTop">...</div> -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#aboutLink">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolioLink">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#eduLink">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contactLink">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="headerSection">
+    <h1 class="name">Eren Altaygil</h1>
+    <h3 class="jobtitle">Web Developer</h3>
+    <div class="container">
+      <div class="micSection">
+        <p class="toolsUsed">Allow the microphone access and click for a surprise</p>
+        <p><i class="fas fa-microphone mic"></i></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax1"></div>
+
+  <div class="row infoSection" id="aboutLink">
+    <div class="container">
+      <div class="aboutMe">
+        <h1 class="sectionTitle">About</h1>
+        <div class="row">
+          <div class="col">
+            <img class="portfolioImg" src="images/photo.png" />
+          </div>
+          <div class="col">
+            <p class="sectionText">My name is Eren Altaygil and I am a full-stack web developer based, born and raised
+              from
+              Brooklyn. My hobbies include sports such as football, baseball, basketball, New York City Photography &
+              fishing.</p>
+
+            <p class="sectionText">I have always had an interest in web development from back in the days of Maxpages &
+              Angelfire and have now
+              decided to make it my career path.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax2"></div>
+
+  <div class="row infoSection" id="portfolioLink">
+    <div class="container">
+      <div class="education">
+        <h1 class="sectionTitle">Portfolio</h1>
+
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                  aria-controls="collapseOne">
+                  The Human Fund
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <div class="descriptionBox">
+                  <p>Users who want to donate to the Human fund visit the website and fill out their information for
+                    the
+                    employee to log in and contact them. Users can also input their email address to receive a
+                    newsletter
+                    connected to a separate database model for the employee to view.</p>
+                </div>
+                <div class="toolsUsed">
+                  <p>React | Ruby On Rails | PostgreSQL</p>
+                </div>
+                <div class="links">
+                  <a class="projLinks" href="http://www.thehumanfund.surge.sh" target="_blank"><i class="fas fa-link"></i></a>
+                  <a class="projLinks" href="https://github.com/altaygileren/humanfund" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  Journal
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <div class="descriptionBox">
+                  <p>Work In Progress. The website is deployed and all of the current code is available. Users register
+                    and log in to post their own articles to share with the community and others may comment on the
+                    articles. The backend if 100% complete.. I am currently in the process of finishing the front end.</p>
+                </div>
+                <div class="toolsUsed">
+                  <p>MongoDB | Express | React | NodeJS | Redux</p>
+                </div>
+                <div class="links">
+                  <a class="projLinks" href="https://fast-taiga-19406.herokuapp.com/" target="_blank"><i class="fas fa-link"></i></a>
+                  <a class="projLinks" href="https://github.com/altaygileren/journal" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  RPSSL
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <div class="descriptionBox">
+                  <p>Inspired by the television show Big Bang Theory, users may play against the computer in a more
+                    advanced version of rock paper scissors. There are two layouts for the user to choose from.</p>
+                </div>
+                <div class="toolsUsed">
+                  <p>JavaScript | HTML5 | CSS3</p>
+                </div>
+                <div class="links">
+                  <a class="projLinks" href="https://altaygileren.github.io/rpssl/" target="_blank"><i class="fas fa-link"></i></a>
+                  <a class="projLinks" href="https://github.com/altaygileren/rpssl" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                  aria-controls="collapseFour">
+                  onBurrito
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <div class="descriptionBox">
+                  <p>The front end to a online food ordering website.</p>
+                </div>
+                <div class="toolsUsed">
+                  <p>React | Ruby On Rails | PostgreSQL</p>
+                </div>
+                <div class="links">
+                  <a class="projLinks" href="http://onburrito.surge.sh/" target="_blank"><i class="fas fa-link"></i></a>
+                  <a class="projLinks" href="https://github.com/altaygileren/onburrito" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                  aria-controls="collapseFive">
+                  GGCE News
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseFive" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <div class="descriptionBox">
+                  <p>Users register and log in to gain the ability to click any state on the SVG map and post their own
+                    newsbit. Non registered users may still view the posts but are not allowed to post.</p>
+                </div>
+                <div class="toolsUsed">
+                  <p>React | NodeJS | PostgreSQL</p>
+                </div>
+                <div class="links">
+                  <a class="projLinks" href="http://nonstop-birds.surge.sh/" target="_blank"><i class="fas fa-link"></i></a>
+                  <a class="projLinks" href="https://github.com/czlinNYC/bones-p3" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax3"></div>
+
+  <div class="row infoSection" id="eduLink">
+    <div class="container">
+      <div class="education">
+        <h1 class="sectionTitle">Education</h1>
+        <p class="sectionText eduText">Skills <br />JavaScript | Redux | React | HTML5 | CSS3 | PostgreSQL | MongoDB |
+          Express<br />
+          NodeJS | Adobe Photoshop | Ruby On Rails | GitHub | Heroku | Bootstrap</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax4"></div>
+
+  <div class="row infoSection" id="contactLink">
+    <div class="container">
+      <h1 class="sectionTitle">Contact</h1>
+      <div class="row">
+        <div class="col contact">
+          <p><a href="https://www.linkedin.com/in/altaygileren" target="_blank"><i class="fab fa-linkedin-in contactBtn"></i></a></p>
+        </div>
+        <div class="col contact">
+          <p><a href="mailto:erenaltaygil@gmail.com?Subject=Hi%20Eren!" target="_top"><i class="far fa-envelope contactBtn"></i></a></p>
+        </div>
+        <div class="col contact">
+          <p><a href="https://www.github.com/altaygileren" target="_blank"><i class="fab fa-github contactBtn"></i></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax5"></div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

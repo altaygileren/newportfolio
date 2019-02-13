@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ECEBEB;
+}
+
+a {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+.row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#eduLink {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+/* Nav */
+.navTop {
+  background-color: black;
+}
+
+.name {
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  padding-top: 5%;
+}
+
+.jobtitle {
+  font-family: 'Exo 2', sans-serif;
+  text-align: center;
+}
+
+/* Microphone */
+.micSection {
+  text-align: center;
+  padding-top: 10%;
+}
+.mic {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.mic:hover {
+  color: firebrick;
+  transition-duration: 0.3s;
+}
+
+.sectionTitle {
+  font-family: 'Russo One', sans-serif;
+  color: black;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+
+.sectionText {
+  font-family: 'Exo 2', sans-serif;
+}
+
+.headerSection {
+  height: 50vh;
+}
+
+.infoSection {
+  height: 100vh;
+}
+
+/* Portfolio */
+.projLinks {
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+
+/* Education */
+.eduText {
+  text-align: center;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+}
+.contactBtn {
+  font-size: 2rem;
+}
+/* Parallax */
+.parallax1 {
+  height: 50vh;
+  background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url('images/coneyisland.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position:center;
+}
+.parallax2 {
+  height: 50vh;
+  background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url('images/broadway.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position:center;
+}
+.parallax3 {
+  height: 50vh;
+  background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url('images/brooklynbridge.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position:center;
+}
+.parallax4 {
+  height: 50vh;
+  background: linear-gradient(rgba(20, 20, 20, .8), rgba(20, 20, 20, .5)), url('images/graff.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position:center;
+}
+.parallax5 {
+  height: 50vh;
+  background: linear-gradient(rgba(20, 20, 20, .8), rgba(20, 20, 20, .5)), url('images/nyc.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position:center;
+}
+
+/* Images */
+.portfolioImg {
+  width: 100%;
+}
+
+
+/* Accordion */
+.card-header {
+  background-color: black;
+}
+.btn-link {
+  color:#F4F4F4;
+  font-family: 'Exo 2', sans-serif;
+}
+.btn-link:hover {
+  color: white;
+}
+.descriptionBox {
+  font-family: 'Exo 2', sans-serif;
+}
+.toolsUsed {
+  font-family: 'Exo 2', sans-serif;
+}
+.card-body {
+  background-color: #f4f4f4;
+}
